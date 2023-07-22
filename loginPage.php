@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="CSS/style.css">
-<title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+<title></title>
 </head>
+
+    <style>
+    </style>
+
 <body>
     <header class="showcase">
         
@@ -13,23 +18,56 @@
                 <img src="https://i.ibb.co/r5krrdz/logo.png">
             </div>
 
+            <div class="container">
             <div class="showcase-content">
                 <div class="formm">
-                    <form>
+
+                    <form method="post" action="controller/loginController.php">
                         <h1>Sign In</h1>
-                        <div class="info">
-                            <input class="email" type="email" placeholder="Email or phone number"> <br>
-                            <input class="email" type="password" placeholder="Password">
-                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                            <div class="info">
+                                    <div class="mb-1 mt-3">
+                                    <input class="email" name="email" type="email" placeholder="Email or phone number">
+                                        <?php
+                                            @$cod = $_REQUEST['cod'];
+                                            if(isset($cod))
+                                            {
+                                                if($cod == '171') {
+                                                    echo ('<span class="ErroEmail">Verifique usuário.</span>');
+                                                } 
+                                            }
+                                        ?>
+                                    <input class="email" name="password" type="password" placeholder="Password">
+                                    <?php
+                                    @$cod = $_REQUEST['cod'];
+                                    if(isset($cod))
+                                    {
+                                        if($cod == '171') {
+                                            echo ('<span class="ErroSenha">Verifique sua senha.</span>');
+                                        }
+                                    }
+
+                        ?>
+                            </div>
+                        
+                    </div>
+                            
+                    </div>
+
                         <div class="btn">
                             <button class="btn-primary" type="submit">Sign In</button>
                         </div>
+                        </div>
+                        
+
                         <div class="help">
                             <div>
                                 <input value="true" type="checkbox"><label>Remember me</label>
                             </div>
 
-                            <a href="https://www.netflix.com/dz-en/LoginHelp">Need Help ?</a>
+                            <a href="">Need Help ?</a>
                         
                         </div>
 
@@ -37,15 +75,9 @@
     
                 </div>
                 
-                <div class="fcbk">
-                    <a href="https://facebook.com">
-                        <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook">
-                      </a>
-                    <p>Login with Facebook</p>
-                </div>
                 <div class="signup">
                     <p>New to Netflix ?</p>
-                    <a href="https://www.netflix.com/dz-en/">Sign up now</a>
+                    <a href="">Sign up now</a>
                 </div>
                 <div class="more">
                     <p>
@@ -55,31 +87,8 @@
 
 
             </div>
+            </div>
 
-       
-            <footer>
-                
-                <div class="ftr-content">
-                    <div class="contact">
-                        <a href="#">Quesions? Contact us.</a>
-                    </div>
-                    <div class="ftr">
-                        <a href="#">Gift Card Terms</a>
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Privacy Statement</a>
-                    </div>
-                    <div class="select">
-                        <select>
-                            <option>English</option>
-                            <option>العربية</option>
-                            <option>Français</option>
-                            
-                        </select>
-                    </div>
-                </div>
-               
-            </footer>
-       
     </header>
 
 
