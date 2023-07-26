@@ -23,17 +23,17 @@
       <div class="container-profile d-flex justify-content-between">
         <div class="profile">
           <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png" width="150px" />
-          <p>José</p>
+          <p>pessoa1</p>
         </div>
 
         <div class="profile">
           <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png" width="150px" />
-          <p>Fernanda</p>
+          <p>pessoa2</p>
         </div>
 
         <div class="profile">
           <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9fa8a33850498.56ba69ac2cc3a.png" width="150px" />
-          <p>João</p>
+          <p>kids</p>
         </div>
 
         <div class="profile">
