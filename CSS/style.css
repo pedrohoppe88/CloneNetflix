@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 
@@ -15,19 +15,16 @@ ul {
 	list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
 	color: #fff;
 }
 
-a {
+a{
 	color: #fff;
 	text-decoration: none;
 }
 
-p {
+p{
 	margin: 0.5rem 0;
 }
 
@@ -145,7 +142,6 @@ img {
 }
 
 
-
 input[type=email] {
 	background: #343434;
 	border: none;
@@ -175,8 +171,7 @@ input[type=password] {
 	color: rgb(17, 108, 228);
 }
 
-.more a:hover,
-.signup a:hover {
+.more a:hover, .signup a:hover {
 	text-decoration: underline;
 }
 
