@@ -7,7 +7,7 @@ if ($_POST) {
           session_start();
           $_SESSION['login'] = $email;
           
-          header('location:../escolha.php');
+          header('location:../perfil.php');
       } else {
           //Login inválido 
           header('location:../loginPage.php?cod=171');
