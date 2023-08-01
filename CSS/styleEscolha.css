@@ -1,5 +1,5 @@
 body {
-	background-color: #f90000;
+	background-color: #000000;
 	font-family: 'Roboto', sans-serif;
     }
     
@@ -52,4 +52,8 @@ body {
 	display: flex;
 	justify-content: center;
 	flex: 1;
+    }
+
+    img {
+	width: 200px;
     }
