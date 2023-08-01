@@ -40,6 +40,7 @@ $perfis = array(
   <style>
     .profile img {
       width: 200px;
+      height: 200px;
       margin-top: 200px;
     }
 
@@ -68,7 +69,6 @@ $perfis = array(
             <?php endforeach; ?>
 
       </div>
-
   </body>
 </html>
 

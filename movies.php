@@ -24,15 +24,42 @@ $perfilId = $_GET['id'];
 $perfil = $perfis[$perfilId];
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 <body>
-    <h1><?php echo $perfil['nome']; ?></h1>
-    <p>Idade: <?php echo $perfil['idade']; ?></p>
-    <p>Filmes:</p>
-    <ul>
+    
+        <?php echo $perfil['nome']; ?></h1>
         <?php foreach ($perfil['filmes'] as $filme) : ?>
-            <li><?php echo $filme; ?></li>
+
+            <nav>
+                <ul>
+                    <li><?php echo $filme; ?></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+  <div class="row flex-nowrap overflow-auto">
+    <div class="col-4">
+    <img src="imagem2.jpg" class="img-fluid" alt="Imagem 2">
+    </div>
+    <div class="col-4">
+      <img src="imagem2.jpg" class="img-fluid" alt="Imagem 2">
+    </div>
+    <div class="col-4">
+      <img src="imagem3.jpg" class="img-fluid" alt="Imagem 3">
+    </div>
+    <!-- Adicione mais divs col-4 conforme necessário -->
+  </div>
+</div>
+            
+        
         <?php endforeach; ?>
-    </ul>
 </body>
 </html>

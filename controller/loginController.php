@@ -8,6 +8,7 @@ if ($_POST) {
           $_SESSION['login'] = $email;
           
           header('location:../perfil.php');
+          
       } else {
           //Login inválido 
           header('location:../loginPage.php?cod=171');
