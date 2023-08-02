@@ -4,7 +4,7 @@
 
 <?php
       require_once './controller/autenticationController.php';
-      ?>
+?>
 
       <?php
       @session_start();
@@ -15,18 +15,15 @@
 $perfis = array(
     array(
         "nome" => "Usuário 1",
-        "filmes" => array("Matrix", "Inception", "Avatar"),
+
         "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"
     ),
     array(
         "nome" => "Usuário 2",
-        "filmes" => array("Titanic", "Forrest Gump", "The Shawshank Redemption"),
         "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"
     ),
     array(
         "nome" => "Perfil Infantil",
-        "idade" => 10,
-        "filmes" => array("Frozen", "Toy Story", "The Lion King"),
         "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"
     )
 );

@@ -1,0 +1,23 @@
+* {
+      margin: auto 0px;
+      padding: 0px;
+}
+
+.row-horizontal {
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  .card {
+      display: inline-block;
+      width: 300px;
+  }
+
+  .owl-carousel  {
+      max-width: 100%;
+      width: 120rem;
+  }
+
+  .teste {
+      max-width: 100%;
+  }

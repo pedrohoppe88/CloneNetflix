@@ -57,9 +57,9 @@ $perfil = $perfis[$perfilId];
     </div>
     <!-- Adicione mais divs col-4 conforme necessário -->
   </div>
-</div>
-            
+</div> 
         
         <?php endforeach; ?>
-</body>
+
+    </body>
 </html>

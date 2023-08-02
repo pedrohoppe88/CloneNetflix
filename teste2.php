@@ -9,10 +9,22 @@
                 array("titulo" => "Avengers: Endgame", 
                 "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
                 array("titulo" => "Avengers: Endgame", 
+                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                array("titulo" => "Avengers: Endgame", 
+                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                array("titulo" => "Avengers: Endgame", 
+                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                array("titulo" => "Avengers: Endgame", 
                 "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg")
                 ),
             
                 "teste1" => array(
+                  array("titulo" => "Avengers: Endgame", 
+                  "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                  array("titulo" => "Avengers: Endgame", 
+                  "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                  array("titulo" => "Avengers: Endgame", 
+                  "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
                   array("titulo" => "Avengers: Endgame", 
                   "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
                   array("titulo" => "Avengers: Endgame", 
@@ -31,7 +43,13 @@
                         array("titulo" => "Avengers: Endgame", 
                         "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
                         array("titulo" => "Avengers: Endgame", 
-                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg")
+                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                        array("titulo" => "Avengers: Endgame", 
+                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                        array("titulo" => "Avengers: Endgame", 
+                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
+                        array("titulo" => "Avengers: Endgame", 
+                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg")
                         ),
         );
 
@@ -50,27 +68,27 @@
 
 </head>
 <body>
-<div class="container mt-5">
+      <div class="teste">
     <?php foreach($filmes as $genero => $listaFilmes): ?>
-        <h2 class="mb-3 genero"><?= $genero ?></h2>
-        <div class="row">
+      <div class="containerTeste">
+        <h2 class="genero"><?= $genero ?></h2>
         <div class="owl-carousel">
             <?php foreach($listaFilmes as $filme): ?>
                 <div class="col-md-3 teste">
-                <img style="width: 300px; height:180px;" src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>">
-                    </div>
+                <img class="img-fluid" style="width: 300px; height:180px;" src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>">
+                  </div>
             <?php endforeach; ?>
         </div>
-        </div>
+
     <?php endforeach; ?>
+    </div>
 
     
-</div>
 
 <script>
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items: 4
+        items: 6
     });
 });
 </script>
