@@ -73,17 +73,17 @@
       <div class="containerTeste">
         <h2 class="genero"><?= $genero ?></h2>
         <div class="owl-carousel">
+
             <?php foreach($listaFilmes as $filme): ?>
                 <div class="col-md-3 teste">
                 <img class="img-fluid" style="width: 300px; height:180px;" src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>">
                   </div>
             <?php endforeach; ?>
+
         </div>
 
     <?php endforeach; ?>
     </div>
-
-    
 
 <script>
 $(document).ready(function(){

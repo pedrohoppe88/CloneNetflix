@@ -1,78 +1,58 @@
-
 <?php
-      $filmes = array(
-            "Ação" => array(
-                array("titulo" => "Avengers: Endgame", 
-                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                array("titulo" => "Avengers: Endgame", 
-                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                array("titulo" => "Avengers: Endgame", 
-                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                array("titulo" => "Avengers: Endgame", 
-                "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg")
-                ),
-            
-                "teste1" => array(
-                  array("titulo" => "Avengers: Endgame", 
-                  "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                  array("titulo" => "Avengers: Endgame", 
-                  "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                  array("titulo" => "Avengers: Endgame", 
-                  "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                  array("titulo" => "Avengers: Endgame", 
-                  "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg")
-                  ),
+$perfis = array(
+    array(
+        "nome" => "Usuário 1",
+        "idade" => 25,
+        "filmes" => array("Matrix", "Inception", "Avatar")
+    ),
+    array(
+        "nome" => "Usuário 2",
+        "idade" => 30,
+        "filmes" => array("Titanic", "Forrest Gump", "The Shawshank Redemption")
+    ),
+    array(
+        "nome" => "Perfil Infantil",
+        "idade" => 10,
+        "filmes" => array("Frozen", "Toy Story", "The Lion King")
+    )
+);
 
-                  "teste2" => array(
-                        array("titulo" => "Avengers: Endgame", 
-                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                        array("titulo" => "Avengers: Endgame", 
-                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                        array("titulo" => "Avengers: Endgame", 
-                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"),
-                        array("titulo" => "Avengers: Endgame", 
-                        "imagem" => "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg")
-                        ),
-        );
+// Pega o ID do perfil da query string
+$perfilId = $_GET['id'];
 
-        ?>
+// Obtem o perfil correspondente
+$perfil = $perfis[$perfilId];
+?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Netflix</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/styleMovies.css">
-
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<div class="container mt-5">
-    <?php foreach($filmes as $genero => $listaFilmes): ?>
-        <h2 class="mb-3 genero"><?= $genero ?></h2>
-        <div class="row">
-        <div class="owl-carousel">
+    
+        <?php echo $perfil['nome']; ?></h1>
+        <?php foreach ($perfil['filmes'] as $filme) : ?>
+
+            <nav>
+                <ul>
+                    <li><?php echo $filme; ?></li>
+                </ul>
+            </nav>
+
+            <div class="container">
             <?php foreach($listaFilmes as $filme): ?>
                 <div class="col-md-3 teste">
-                <img style="width: 300px; height:180px;" src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>">
-                    </div>
+                <img class="img-fluid" style="width: 300px; height:180px;" src="<?= $filme['imagem'] ?>" alt="<?= $filme['titulo'] ?>">
+                  </div>
             <?php endforeach; ?>
-        </div>
-        </div>
-    <?php endforeach; ?>
+            </div>
+        
+        <?php endforeach; ?>
 
-    
-</div>
-
-<script>
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items: 4
-    });
-});
-</script>
-</body>
+    </body>
 </html>
