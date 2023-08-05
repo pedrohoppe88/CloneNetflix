@@ -69,6 +69,7 @@
 </head>
 <body>
       <div class="teste">
+          <div class="teste">
     <?php foreach($filmes as $genero => $listaFilmes): ?>
       <div class="containerTeste">
         <h2 class="genero"><?= $genero ?></h2>
@@ -84,11 +85,12 @@
 
     <?php endforeach; ?>
     </div>
+    </div>
 
 <script>
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items: 6
+        items: 8
     });
 });
 </script>

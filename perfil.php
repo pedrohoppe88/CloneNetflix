@@ -68,8 +68,3 @@ $perfis = array(
       </div>
   </body>
 </html>
-
-
-
-
-
