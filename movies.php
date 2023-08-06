@@ -67,9 +67,9 @@ $perfil = $perfis[$perfilId];
           <div>
             <nav>
               <a href="#">Inicio</a>
-              <a href="#">Peliculas</a>
-              <a href="#">Estrenos</a>
-              <a href="#">Contacto</a>
+              <a href="#">Contas</a>
+              <a href="#">Contato</a>
+              <a href="#">sair</a>
             </nav>
           </div>
         </div>
