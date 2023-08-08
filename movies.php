@@ -9,7 +9,7 @@ $perfis = array(
     array(
         "nome" => "Usuário 1",
         "capa" => "https://occ-0-1356-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABXnUGZEm8bksAzxGoiJHhds3hfjqcF8yAGRDzhiKlroTBwI9EN3dUHB_yVqe3VIJAefcCDZG2w-3PWvR8-noL8dmCJeHV46YqHQ7.jpg?r=fa1",
-        "capaName" => "Viuva Negra", 
+        "capaName" => "Tropa de Elite", 
         "filmes" => array("Matrix", "Inception", "Avatar"),
         "genero" => array(
             "ação" =>array("https://yt3.ggpht.com/a/AATXAJx1XwNi6jt6ikxhw0wrlBd9MGkcRDI5DzweQA=s900-c-k-c0xffffffff-no-rj-mo", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://yt3.ggpht.com/a/AATXAJx1XwNi6jt6ikxhw0wrlBd9MGkcRDI5DzweQA=s900-c-k-c0xffffffff-no-rj-mo"),
@@ -92,8 +92,10 @@ $perfil = $perfis[$perfilId];
           impedit omnis vero. Provident quae voluptate id facere repellat harum
           autem
         </p>
+        <div class="alingbnt">
         <a class="btn btn-primary boton" href="#" role="button">inicia</a>
         <a class="btn btn-primary boton" href="#" role="button">mais informações</a>
+        </div>
       </main>
     </div>
     </div>
