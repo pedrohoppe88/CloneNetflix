@@ -12,19 +12,22 @@
   .contenedor {
     width: 90%;
     margin: auto;
+    align-items: center;
   }
   
   .header {
-    margin: 25px 0px;
+    margin: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
   
   header div h2 {
     font-size: 40px;
     font-family: "roboto";
     color: rgb(255, 0, 0);
+    margin-top: 10px;
   }
   
   header div a {
@@ -33,6 +36,7 @@
     font-family: "lato";
     color: rgb(151, 160, 168);
     margin-left: 25px;
+    align-items: center;
   }
   
   header div a:hover {
@@ -43,17 +47,17 @@
   }
   
   .back-image {
+    max-width: 100%;
     width: 100%;
-    height: 40rem;
+    height: 50rem;
     font-size: 18px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-      url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.hdqwalls.com%2Fdownload%2Foppenheimer-2w-1920x1080.jpg&f=1&nofb=1&ipt=03d1451f46a8b9bbe3e24d76e5ba3b85f37bb4487c8a19d00772a109aa73f714&ipo=images);
     min-height: 30.5em;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
+    margin-top: 30px;
   }
   
   .back-image .contenedor {
@@ -86,9 +90,33 @@
     cursor: pointer;
     transition: 0.3s ease all;
   }
-  .boton i {
-    margin: 0 1em;
+  .boton {
+    width: 200px;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+    margin: 10px;
   }
+
+  .boton p {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+  
+  .alingCapa{
+    width: 100%;
+    height: 4rem;
+    margin-left: 50px;
+    position: relative;
+    top: 90px;
+  }
+
+.mainFilmes {
+  position: relative;
+  top: -100px;
+}
   
   .back-image .boton:hover {
     color: #fff;

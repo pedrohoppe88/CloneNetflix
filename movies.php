@@ -8,6 +8,8 @@
 $perfis = array(
     array(
         "nome" => "Usuário 1",
+        "capa" => "https://occ-0-1356-559.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABXnUGZEm8bksAzxGoiJHhds3hfjqcF8yAGRDzhiKlroTBwI9EN3dUHB_yVqe3VIJAefcCDZG2w-3PWvR8-noL8dmCJeHV46YqHQ7.jpg?r=fa1",
+        "capaName" => "Viuva Negra", 
         "filmes" => array("Matrix", "Inception", "Avatar"),
         "genero" => array(
             "ação" =>array("https://yt3.ggpht.com/a/AATXAJx1XwNi6jt6ikxhw0wrlBd9MGkcRDI5DzweQA=s900-c-k-c0xffffffff-no-rj-mo", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jyoTSPJvg4wI6o7ZPHh_twHaLH%26pid%3DApi&f=1&ipt=2ea27a8b111a0de91bb1b808cc3fe3b7adf79f00c5652032f4f760bde7e9a0fe&ipo=images", "https://yt3.ggpht.com/a/AATXAJx1XwNi6jt6ikxhw0wrlBd9MGkcRDI5DzweQA=s900-c-k-c0xffffffff-no-rj-mo"),
@@ -16,6 +18,8 @@ $perfis = array(
     ),
     array(
         "nome" => "Usuário 2",
+        "capa" => "https://occ-0-1356-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfldUgU7hEYk1wUdc63pLopWq5lliudOErCl66ewZbmDGQnFOYy6KQ2UbTpVIJxdvt7TLjbymkzXZQSZcEzdxGPG6g-7s9gEue2b.jpg?r=914",
+        "capaName" => "bostalhudo", 
         "filmes" => array("Titanic", "Forrest Gump", "The Shawshank Redemption"),
         "genero" => array(
             "drama" => array("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2b%2Fc7%2F69%2F2bc769af019f122e8edaf7a8e13d5eee.jpg&f=1&nofb=1&ipt=8686c19a696fc0b98186ecd9d9b5a4c3efd1363b5c388a20197ad92256dd5da1&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fconteudo.imguol.com.br%2Fc%2Fentretenimento%2F2014%2F10%2F29%2Fposter-de-o-melhor-de-mim-1414609440210_657x959.jpg&f=1&nofb=1&ipt=9992c5984935c2da6c879a189d56aedb1d9e3e142da244aa99e8e92989fe569d&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi2.wp.com%2Fwww.cinemadebuteco.com.br%2Fwp-content%2Fuploads%2F2016%2F06%2Fmelhores-filmes-de-drama-dos-anos-2000-a-corrente-do-bem.jpg&f=1&nofb=1&ipt=48cc37ac92f4f42395e70c03b4fe5432cb40705f4e7f18c9d988e52a6580eb6e&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7f%2F85%2F1a%2F7f851adb28f295c8148de598ba077bd3.jpg&f=1&nofb=1&ipt=772efd9e9ea2bae0881d0c4ce51eeb3ccc56361bbc0ae40607c60e89756abe87&ipo=images", "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbr.web.img2.acsta.net%2Fpictures%2F20%2F07%2F09%2F18%2F25%2F3014499.jpg&f=1&nofb=1&ipt=20fa6db21b1fae938aae9e33171f0656a9233577809f768435175801d139afdf&ipo=images"),
@@ -24,6 +28,8 @@ $perfis = array(
     ),
     array(
         "nome" => "Perfil Infantil",
+        "capa" => "",
+        "capaName" => "Viuva Negra", 
         "idade" => 10,
         "filmes" => array("Frozen", "Toy Story", "The Lion King"),
         "genero" => array(
@@ -61,7 +67,7 @@ $perfil = $perfis[$perfilId];
       <header>
         <div class="header">
           <div>
-            <h2>NETFLIX DO BRAZIL :)</h2>
+            <h2>NETFLIX</h2>
           </div>
 
           <div>
@@ -76,18 +82,20 @@ $perfil = $perfis[$perfilId];
       </header>
     </div>
 
-    <div class="back-image">
-      <main class="contenedor">
-        <h1>Oppenheimerr</h1>
+    <div class="back-image" style="background-image: url('<?php echo $perfil['capa']; ?>');">
+    <div class="alingCapa">
+      <main class="mainFilmes">
+      <h1 class="perfil-nome"><?php echo $perfil['capaName']; ?></h1>
         <p class="descripccion">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iure
           at, est mollitia quaerat ipsum, facilis, inventore numquam nesciunt
           impedit omnis vero. Provident quae voluptate id facere repellat harum
           autem
         </p>
-        <button role="button" class="boton"><i class="fas fa-play"></i>iniciar</button>
-        <button role="button" class="boton"><i class="fas fa-info-circle"></i>mais informações</button>
+        <a class="btn btn-primary boton" href="#" role="button">inicia</a>
+        <a class="btn btn-primary boton" href="#" role="button">mais informações</a>
       </main>
+    </div>
     </div>
 
     <div class="filmes">
