@@ -19,7 +19,7 @@ $perfis = array(
     array(
         "nome" => "Usuário 2",
         "capa" => "https://occ-0-1356-559.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfldUgU7hEYk1wUdc63pLopWq5lliudOErCl66ewZbmDGQnFOYy6KQ2UbTpVIJxdvt7TLjbymkzXZQSZcEzdxGPG6g-7s9gEue2b.jpg?r=914",
-        "capaName" => "bostalhudo", 
+        "capaName" => "Romance não sei o nome", 
         "filmes" => array("Titanic", "Forrest Gump", "The Shawshank Redemption"),
         "genero" => array(
             "drama" => array("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2b%2Fc7%2F69%2F2bc769af019f122e8edaf7a8e13d5eee.jpg&f=1&nofb=1&ipt=8686c19a696fc0b98186ecd9d9b5a4c3efd1363b5c388a20197ad92256dd5da1&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fconteudo.imguol.com.br%2Fc%2Fentretenimento%2F2014%2F10%2F29%2Fposter-de-o-melhor-de-mim-1414609440210_657x959.jpg&f=1&nofb=1&ipt=9992c5984935c2da6c879a189d56aedb1d9e3e142da244aa99e8e92989fe569d&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi2.wp.com%2Fwww.cinemadebuteco.com.br%2Fwp-content%2Fuploads%2F2016%2F06%2Fmelhores-filmes-de-drama-dos-anos-2000-a-corrente-do-bem.jpg&f=1&nofb=1&ipt=48cc37ac92f4f42395e70c03b4fe5432cb40705f4e7f18c9d988e52a6580eb6e&ipo=images", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7f%2F85%2F1a%2F7f851adb28f295c8148de598ba077bd3.jpg&f=1&nofb=1&ipt=772efd9e9ea2bae0881d0c4ce51eeb3ccc56361bbc0ae40607c60e89756abe87&ipo=images", "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbr.web.img2.acsta.net%2Fpictures%2F20%2F07%2F09%2F18%2F25%2F3014499.jpg&f=1&nofb=1&ipt=20fa6db21b1fae938aae9e33171f0656a9233577809f768435175801d139afdf&ipo=images"),
@@ -28,8 +28,8 @@ $perfis = array(
     ),
     array(
         "nome" => "Perfil Infantil",
-        "capa" => "",
-        "capaName" => "Viuva Negra", 
+        "capa" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoY4amkykhIr1uLI3tkq13DQPUuOwti7457fBhmIp2URLgkY1F_tpbChSBPHeXDZmNFE0&usqp=CAU",
+        "capaName" => "nemo", 
         "idade" => 10,
         "filmes" => array("Frozen", "Toy Story", "The Lion King"),
         "genero" => array(
