@@ -30,7 +30,16 @@
                             <div class="info">
                                 
                                     <div class="mb-1 mt-3">
-                                    <input class="email" name="email" type="email" placeholder="Email or phone number">
+
+                                    <?php
+                                    if(isset($_COOKIE['email'])){
+                                        echo '<input class="email" name="email" type="email" value="'.$_COOKIE['email'].'" placeholder="Email or phone number">';
+                                    } else {
+                                        echo '<input class="email" name="email" type="email" value="" placeholder="Email or phone number">';
+                                    } 
+
+                                    ?>
+
                                         <?php
                                             @$cod = $_REQUEST['cod'];
                                             if(isset($cod))
@@ -65,7 +74,16 @@
 
                         <div class="help">
                             <div>
-                                <input value="true" type="checkbox"><label>Remember me</label>
+
+                                <?php
+                                    if(isset($_COOKIE['email'])){
+                                        echo '<input class="" checked value="1" name="lembrar"  type="checkbox" id="lembrar"></input>';
+                                    } else {
+                                        echo '<input class="" value="1" name="lembrar" type="checkbox" id="lembrar"></input>';
+                                    }
+                                ?>
+
+                                <label>Remember me</label>
                             </div>
 
                             <a href="">Need Help ?</a>
@@ -91,7 +109,6 @@
             </div>
 
     </header>
-
 
 </body>
 </html>
