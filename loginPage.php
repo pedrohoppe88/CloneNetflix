@@ -23,7 +23,7 @@
                 <div class="formm">
 
                     <form method="post" action="controller/loginController.php">
-                        <h1>Sign In</h1>
+                        <h1>Login</h1>
 
                         <div class="row">
                             <div class="col-md-12 text-center">

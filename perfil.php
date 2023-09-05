@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-
 <?php
       require_once './controller/autenticationController.php';
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
 
       <?php
       @session_start();

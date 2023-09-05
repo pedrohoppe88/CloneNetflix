@@ -1,6 +1,9 @@
+<?php
+    require_once './controller/autenticationController.php';
+?>
 
 <?php
-      require_once './controller/autenticationController.php';
+    require_once './controller/autenticationMovies.php';
 ?>
 
 <?php
@@ -44,10 +47,12 @@ $perfilId = $_GET['id'];
 
 // Obtem o perfil correspondente
 $perfil = $perfis[$perfilId];
+
 ?>
 
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
