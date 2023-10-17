@@ -1,44 +1,45 @@
 <?php
 
-      class Conexao 
-      {
-            protected $host = 'localhost';
-            protected $dbname = 'netflix';
-            protected $user = 'root';
-            protected $password = 'asasasas';
+class Conexao 
+{
+    protected $host;
+    protected $dbname;
+    protected $user;
+    protected $password;
+    protected $conn;
 
-            protected $conn;
+    public function __construct()
+    {
+        $this->host = 'localhost';
+        $this->dbname = "netflix";
+        $this->user = 'root';
+        $this->password = 'lasanh@123';
+        $this->connect();
+    }
 
-            public function connect()
-            {
-                  $this->conn = null;
+    public function connect()
+    {
+        $this->conn = null;
 
-                  try {
-                        $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->dbname, $this->user, $this->password);
-                        $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        try {
+            $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->dbname, $this->user, $this->password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die('Erro de conexão: ' . $e->getMessage());
+        }
 
-                  } catch (PDOException $e) {
-                        echo 'Erro de conexão: ' . $e->getMessage();
-                  }
+        return $this->conn;
+    }
 
-                  return $this->conn;
+    public function close()
+    {
+        $this->conn = null;
+    }
 
-            }
-
-                  public function close()
-                  {
-                        $this->conn = null;
-                  }
-            }
-
-            $db = new Conexao();
-            $conn = $db->connect();
-
-            if($conn)
-            {
-                  echo "conectado com sucesso";
-            } else {
-                  echo "Não foi possível conectar.";
-            }
+    public function getConnection()
+    {
+        return $this->conn;
+    }
+}   
 
 ?>
