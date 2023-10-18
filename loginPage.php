@@ -32,6 +32,8 @@
                                     <div class="mb-1 mt-3">
 
                                     <?php
+                                    
+
                                     if(isset($_COOKIE['email'])){
                                         echo '<input class="email" name="email" type="email" value="'.$_COOKIE['email'].'" placeholder="Email or phone number">';
                                     } else {
@@ -96,7 +98,7 @@
                 
                 <div class="signup">
                     <p>New to Netflix ?</p>
-                    <a href="">Sign up now</a>
+                    <a href="cadastroPage.php">Sign up now</a>
                 </div>
                 <div class="more">
                     <p>

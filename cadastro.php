@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div>
             <label for="senha">Senha:</label>
-            <input type="password" name="password" required>
+            <input type="password" name="password" required> 
         </div>
         <button type="submit">Cadastrar</button>
     </form>
