@@ -5,10 +5,9 @@ require_once '../usuario.class.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
     
-    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-    // Validação básica
     if (empty($email) || empty($password))
     {
         die("Dados inválidos.");
@@ -17,10 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $user = new Usuario();
 
     if ($user->register($email, $password)) {
-        header('location:../cadastro.php'); // Redirecione para uma página de sucesso
+        header('location:../cadastro.php'); 
        
     } else {
-        header("Location: erro_registro.php"); // Redirecione para uma página de erro
+        header("Location: erro_registro.php");
         exit();
     }
 }

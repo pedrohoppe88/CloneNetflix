@@ -4,7 +4,8 @@ class Usuario {
 
     private $conn;
 
-    public function __construct() {
+    public function __construct()
+    {
         $conexao = new Conexao();
         $this->conn = $conexao->getConnection();
     }
@@ -25,7 +26,7 @@ class Usuario {
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':senha', $hashedPassword);
 
-        return $stmt->execute(); // Retorna true em caso de sucesso, false caso contrário
+        return $stmt->execute();
     }
 }
 

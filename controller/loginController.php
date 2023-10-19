@@ -1,5 +1,6 @@
 <?php
-if ($_POST) {
+if ($_POST)
+{
       $email = $_POST['email'];
       $senha = $_POST['password'];
       @$lembrar = $_POST['lembrar'];
