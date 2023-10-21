@@ -22,7 +22,7 @@
             <div class="showcase-content">
                 <div class="formm">
 
-                    <form method="post" action="controller/loginController.php">
+                    <form method="post" action="controller/loginControllerTeste.php">
                         <h1>Login</h1>
 
                         <div class="row">
