@@ -11,7 +11,6 @@ function checkLogin($conn, $email, $password)
     if ($stmt->rowCount() > 0) {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
         
-        
         if (password_verify($password, $user['senha'])) // verificando a senha que está no banco
         { 
             return $user;
@@ -36,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
     if ($user) {
         session_start();
-        $_SESSION["login"] = $user;
+        $_SESSION["login"] = $user->id;
 
         if(isset($lembrar))
         {

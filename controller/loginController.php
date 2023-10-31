@@ -26,7 +26,6 @@ if ($_POST)
           header('location:../perfil.php');
           
       } else {
-          //Login inválido 
           header('location:../loginPage.php?cod=171');
       }
   } else {
