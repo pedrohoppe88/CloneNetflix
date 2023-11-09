@@ -1,7 +1,6 @@
 <?php
 require_once "model/conexaoPDO.php";
-require_once "controller/verificaPerfilController.php";
-
+require_once "verificaPerfilController.php";
 class Subperfil {
       private $id;
       private $user_id;
