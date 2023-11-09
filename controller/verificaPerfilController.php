@@ -1,5 +1,5 @@
 <?php
-require_once 'model/conexaoPDO.php"';
+require_once 'm,odel/conexaoPDO.php"';
 require_once 'loginControllerTeste.php';
 
 if(!isset($_SESSION['login']))
