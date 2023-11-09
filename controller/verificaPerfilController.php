@@ -1,6 +1,6 @@
 <?php
-require_once '../model/conexaoPDO.php';
-require_once '..loginControllerTeste.php';
+require_once 'model/conexaoPDO.php"';
+require_once 'loginControllerTeste.php';
 
 if(!isset($_SESSION['login']))
 {
@@ -16,7 +16,6 @@ $stmt->execute();
 if($stmt->rowCount() > 0)
 {
     $perfil = $stmt->fetch();
-    header();
 } else {
     
 }

@@ -1,5 +1,5 @@
 <?php
-require_once "../model/conexaoPDO.php";
+require_once "model/conexaoPDO.php";
 
 function checkLogin($conn, $email, $password) 
 {
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                   setcookie("email", "", time() - 3600);
               }
         }
-        header("Location: ../perfil.php");
+        header("Location: ../perfilCreatePage.php");
 
     } else {
         echo "Detalhes de login inválidos!";
