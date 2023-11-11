@@ -37,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $_SESSION["login"] = $user['id'];
 
-        // Verifica se $lembrar está definido
         if (isset($lembrar)) {
             if ($lembrar == 1) {
                 setcookie('email', $email, time() + (86400 * 7), "/"); // 86400 = 1 day
@@ -48,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
         
-        header("Location: ../criarPerfil.php");
+        header("Location: ../perfilPDO.php");
     } else {
         echo "Detalhes de login inválidos!";
     }
