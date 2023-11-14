@@ -12,5 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $subperfil = new Subperfil();
     $subperfil->salvarNoBanco($user_id, $nome, $avatar);
+    header("location: ../perfilPDO");
 }
 ?>
